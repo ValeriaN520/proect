@@ -1,0 +1,119 @@
+@font-face {
+    font-weight: 400;
+    font-family: "Montserrat";
+    font-style: normal;
+    src: url("fonts/Montserrat-Regular.woff") format("woff");
+  }
+  
+  @font-face {
+    font-weight: 700;
+    font-family: "Montserrat";
+    font-style: normal;
+    src: url("fonts/Montserrat-Bold.woff") format("woff");
+  }
+  header,
+  main,
+  footer {
+    background-color: #f3faff;
+    border: 2px solid #7fc1ff;
+  }
+  header::before,
+  footer::before,
+  main::before {
+    color: #7fc1ff;
+  }
+  nav,
+  section,
+  aside {
+    background-color: #f9f7ff;
+    border: 2px solid #9779ec;
+  }
+  
+  nav::before,
+  section::before,
+  aside::before {
+    color: #9779ec;
+  }
+  aside{
+    float:right;
+    min-width: 90px;
+    min-height: 175px;
+  }
+  nav{
+      margin-right: 165px;
+      margin-left: 5px;
+  }
+  section{
+      margin-right: 165px;
+      margin-left: 5px;
+  }
+  
+  p {
+      background-color: #ffffff;
+      border: 2px solid #f36dff;
+      max-width: 80px;
+      margin: 0 25px 0 0;
+      display: inline-block;    
+    }
+    
+    p::before {
+      color: #f36dff;
+      content: "p";
+    }
+  h1 {
+    font-size: 18px;
+    background-color: #ffffff;
+    border: 2px solid #ff994f;
+  }
+  
+  h1::before {
+    content: "h1";
+    color: #ff994f;
+  }
+  
+  * {
+    position: relative;
+    padding: 20px 25px 25px;
+    margin: 0;
+    border-radius: 7px;
+    max-width: 650px;
+  }
+  
+  *:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  *::before {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    font-weight: 650;
+    font-size: 11px;
+    line-height: 10px;
+    letter-spacing: 0.04em;
+  }
+  
+  main::before {
+    content: "main";
+  }
+  
+  header::before {
+    content: "header";
+  }
+  
+  footer::before {
+    content: "footer";
+  }
+  
+  section::before {
+    content: "section";
+  }
+  
+  aside::before {
+    content: "aside";
+  }
+  
+  nav::before {
+    content: "nav";
+  }
+  
